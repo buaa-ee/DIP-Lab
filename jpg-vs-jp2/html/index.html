@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" title="default demosheet" media="screen" href="demo.css" type="text/css" />
+    <title>Image Comparison</title>
+    <script async src="js/pica.min.js"></script>
+    <script async src="js/splitimage2.js"></script>
+</head>
+
+<body style="max-width: 100%;">
+
+    <div class="demo" style="margin-left: auto; margin-right: auto; overflow:hidden;">
+        <table>
+            <tr>
+                <td class="title" colspan=3>
+                    <select id="fileSel" style="font-size: 1.1em; margin-bottom: 1em;" multiple="multiple">
+                        <option value="lena512" selected>Lena</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title" style="width:16em;padding-left:4em;text-align:right;">
+                    <select id="leftSel" style="font-size: 1.1em;">
+                        <option value="bmp" folder="BMP">BMP</option>
+                        <option value="jpg" folder="JPEG" selected>JPEG</option>
+                        <option value="jp2" folder="JP2K">JPEG 2000</option>
+                    </select>
+                    <select id="leftQual" style="font-size: 1.1em;">
+                        <option value="5" selected>512x512</option>
+                    </select>
+                </td>
+                <td class="center-head" id="center-head">
+                    --- vs ---
+                </td>
+                <td class="title" style="width:16em;padding-right:4em;text-align:left;">
+                    <select id="rightSel" style="font-size: 1.1em;">
+                        <option value="bmp" folder="BMP">BMP</option>
+                        <option value="jpg"  folder="JPEG">JPEG</option>
+                        <option value="jp2"  folder="JP2K" selected>JPEG 2000</option>
+                    </select>
+                    <select id="rightQual" style="font-size: 1.1em;">
+                        <option value="5" selected>512x512</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=3 style="padding-top: 1em; padding-bottom: 1em;">
+                    <div id="rightContainer" style="margin-left: auto; margin-right: auto; position: relative; width:800px; height:800px;">
+                        <div id="leftContainer" style="border-right: 1px dotted white; width:800px; height:800px;"></div>
+                        <div id="leftText" style="position: absolute; color: white; padding:.2em .5em .2em .5em;"></div>
+                        <div id="rightText" style="position: absolute; color: white; padding:.2em .5em .2em .5em;"></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="title" colspan="3" style="width: 20%; text-align: center; padding-bottom: 1.25em;">
+                    <select id="scaleSel" style="width:5em ;font-size: 1em;text-align:center;">
+                        <option ratio="1:3" value="0.5773502692">1/3</option>
+                        <option ratio="1:2" value="0.7071067812">1/2</option>
+                        <option ratio="1:1" value="1">1x</option>
+                        <option ratio="2:1" value="1.414213562" selected>2x</option>
+                        <option ratio="3:1" value="1.732050808">3x</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
