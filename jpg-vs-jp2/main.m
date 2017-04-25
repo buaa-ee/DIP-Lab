@@ -33,7 +33,7 @@ fprintf ('\n')
 disp(  '---------------------- VISUAL DIFF ----------------------'  )
 disp(  '            Opening diff in MATLAB Browser...            '  )
 disp(  'Grayscale JPEG 2000 might be rendered RED in the browser.'  )
-disp(  '           It depends on your operating system.          ')
+disp(  '           It depends on your operating system.          '  )
 disp(  '    I dont know why, and I am not going to fix that.     '  )
 
 web(url_local, '-notoolbar')
