@@ -2,7 +2,7 @@ imf_bmp = 'img/lena512.bmp';
 imf_jpg = 'img/lena512.jpg';
 imf_jp2 = 'img/lena512.jp2';
 url_local  = 'html/index.html';
-url_remote = 'https://stamp711.github.io/DIP-Lab/jpg-vs-jp2/html/index.html';
+url_remote = 'https://stamp711.github.io/DIP-Lab/jpg-vs-jp2/index.html';
 
 I = imread(imf_bmp);
 bits_origin   = imfbits(imf_bmp);
